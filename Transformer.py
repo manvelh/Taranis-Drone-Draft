@@ -1,5 +1,6 @@
 from pynput.keyboard import Key, Controller
 import time
+import os
 keyboard = Controller()
 
 
@@ -12,15 +13,15 @@ class Transformer:
             #Say some kind of message
             "message": "echo Hello in Bash",
             #Transform KML.kml into poly.json
-            "processPoly": "ogr2ogr -f GeoJSON DD_Directory/Save_KML.kml&LL.kml_Here/poly.json DD_Directory/Save_KML.kml&LL.kml_Here/KML.kml",
+            "processPoly": "ogr2ogr -f GeoJSON 'DD_Directory/Save_KML.kml&LL.kml_Here/poly.json' 'DD_Directory/Save_KML.kml&LL.kml_Here/KML.kml'",
             #Transform LL.kml into ll.json
-            "processLL": "ogr2ogr -f GeoJSON DD_Directory/Save_KML.kml&LL.kml_Here/ll.json DD_Directory/Save_KML.kml&LL.kml_Here/LL.kml",
+            "processLL": "ogr2ogr -f GeoJSON 'DD_Directory/Save_KML.kml&LL.kml_Here/ll.json' 'DD_Directory/Save_KML.kml&LL.kml_Here/LL.kml'",
             #Run Python Script for FPA.py without LL.kml
             "processFlightPlanWO": "python3 FPA.py 1",
             #Run Python Script for FPA.py with LL.kml
             "processFlightPlanW": "python3 FPA.py 0",
             #Transform finalPath.json to finalPath.kml
-            "processFP": "ogr2ogr -f KML DD_Directory/Save_KML.kml&LL.kml_Here/finalPath.kml finalPath.json",
+            "processFP": "ogr2ogr -f KML 'DD_Directory/Save_KML.kml&LL.kml_Here/finalPath.kml' finalPath.json",
             #Exit bash or powerhsell
             "getOut": "exit"
         }

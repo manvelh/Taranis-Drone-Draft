@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>KML.kml</name>
+	<Style id="hl">
+		<IconStyle>
+			<scale>1.2</scale>
+		</IconStyle>
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="default">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="default0">
+		<PolyStyle>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>KML</name>
+		<styleUrl>#default</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-95.43389794817864,39.89961973368524,0 -95.43394908817412,39.8985154653205,0 -95.43232690956569,39.89798696087544,0 -95.43017577544767,39.89724867386959,0 -95.42782577780014,39.89650947749939,0 -95.4255949651436,39.89634137756124,0 -95.42470781473706,39.8966089378284,0 -95.42486219888876,39.89732288342974,0 -95.42587020182693,39.89782718011516,0 -95.42699725842337,39.89737600956846,0 -95.42932164693208,39.89848287899852,0 -95.43164500778927,39.89830669696761,0 -95.43244124661253,39.89963545677573,0 -95.43389794817864,39.89961973368524,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

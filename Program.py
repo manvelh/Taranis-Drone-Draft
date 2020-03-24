@@ -107,7 +107,7 @@ else:
 
         Transformer.transKML("exiting")
 
-        os.startfile('C:/Users/there/Documents/Drone_Draft/DD_Directory/Save_KML.kml&LL.kml_Here/finalPath.kml')
+        os.startfile(dir_path+'\DD_Directory/Save_KML.kml&LL.kml_Here/finalPath.kml')
 
         decision = str(input("\nReady to Upload to Litchi?\n"))
         
