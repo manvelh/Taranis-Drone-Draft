@@ -15,33 +15,33 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 
 if not os.path.exists(dir_path+'\DD_Directory'):
     os.makedirs(dir_path+'\DD_Directory')
-    print("\nCREATED DD_DIRECTORY\n")
+    print("\nCREATED DD_DIRECTORY\n\nX\n")
 else:
-    print("\nDD_DIRECTORY DETECTED\n")
+    print("\nDD_DIRECTORY DETECTED\n\n1\n")
 
 MainDirectory = dir_path+'\DD_Directory'
  
 if not os.path.exists(MainDirectory+'\Download_KML_File_Here'):
     os.makedirs(MainDirectory+'\Download_KML_File_Here')
-    print("X\n\nCREATED DOWNLOAD DIRECTORY\n")
+    print("\nCREATED DOWNLOAD DIRECTORY\n\nX\n")
 else:
-    print("1\n\nDOWNLOAD DIRECTORY DETECTED\n")
+    print("\nDOWNLOAD DIRECTORY DETECTED\n\n2\n")
 
 DownloadDirectory = MainDirectory+'\Download_KML_File_Here'
 
 if not os.path.exists(MainDirectory+'\Save_KML.kml&LL.kml_Here'):
     os.makedirs(MainDirectory+'\Save_KML.kml&LL.kml_Here')
-    print("X\n\nCREATED PROCESS DIRECTORY\n")
+    print("\nCREATED PROCESS DIRECTORY\n\nX\n")
 else:
-    print("2\n\nPROCESS DIRECTORY DETECTED\n")
+    print("\nPROCESS DIRECTORY DETECTED\n\n3\n")
 
 ProcessDirectory = MainDirectory+'\Save_KML.kml&LL.kml_Here'
 
 if not os.path.exists(MainDirectory+'\Processed_FlightPlans'):
     os.makedirs(MainDirectory+'\Processed_FlightPlans')
-    print("X\n\nCREATED POST DIRECTORY")
+    print("\nCREATED POST DIRECTORY\n\nX\n")
 else:
-    print("3\n\nPOST DIRECTORY DETECTED\n")
+    print("\nPOST DIRECTORY DETECTED\n\n4\n")
 
 PostDirectory = MainDirectory+'\Processed_FlightPlans'
 
